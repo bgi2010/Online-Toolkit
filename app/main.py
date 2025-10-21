@@ -22,8 +22,9 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-        "http://192.168.2.245:3000",  # 添加局域网 IP
-        "https://*.vercel.app",
+        "http://192.168.2.245:3000",
+        "https://*.vercel.app",  # ✅ 确保有这一行
+        "https://*.railway.app",  # 添加这一行（可选）
     ],
     allow_credentials=True,
     allow_methods=["*"],
