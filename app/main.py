@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import logging
-from routers import convert, download  # 添加 download 导入
+from app.routers import convert, download  # 添加 download 导入
 
 # 配置日志
 logging.basicConfig(level=logging.INFO)
